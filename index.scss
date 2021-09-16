@@ -96,12 +96,16 @@ header {
     }
   }
   .main-paragraph-container {
-    margin-top: 10rem;
+    margin-top: 8rem;
     line-height: 1.2rem;
     color: rgb(242, 242, 242);
     font-size: 12px;
     letter-spacing: 1px;
     width: 100%;
+    p{
+        width: 80%;
+        padding: 3px;
+    }
   }
 }
 .featured-project-container {
