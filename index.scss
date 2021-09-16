@@ -30,7 +30,7 @@ header {
   background-color: rgba(23, 24, 28, 0.58);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.035);
   .logo {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 900;
     letter-spacing: -2px;
     color: rgb(242, 242, 242);
@@ -96,8 +96,7 @@ header {
     }
   }
   .main-paragraph-container {
-    margin-top: 7rem;
-    text-align: center;
+    margin-top: 10rem;
     line-height: 1.2rem;
     color: rgb(242, 242, 242);
     font-size: 12px;
@@ -106,6 +105,7 @@ header {
   }
 }
 .featured-project-container {
+    margin-top: 2rem;
   .featured-inner-container {
     .featured-main-tag {
       position: relative;
@@ -113,7 +113,7 @@ header {
         content: "";
         position: absolute;
         width: 50%;
-        left: 60%;
+        left: 200px;
         top: 12px;
         height: 1px;
         background-color: #444444;
@@ -265,7 +265,7 @@ header {
       width: 20px;
     }
     h2 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 
