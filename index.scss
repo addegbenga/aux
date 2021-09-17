@@ -6,6 +6,11 @@
   box-sizing: border-box;
   //   overflow-x: hidden;
 }
+.gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+  }
 body {
   font-family: "Raleway", sans-serif;
   background-color: #17181c;
