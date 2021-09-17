@@ -10,6 +10,46 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #17181c;
   color: #ffffff;
+  position: relative;
+}
+
+.ball {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  border: 3px solid dodgerblue;
+  border-radius: 50%;
+}
+
+progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: transparent;
+}
+
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+
+progress::-webkit-progress-value {
+  background: -webkit-gradient(linear, right top, left top, from(#2af598), color-stop(#01b3e3), color-stop(#25ce7b), color-stop(#fdc741), to(dodgerblue));
+  background: linear-gradient(to left, #2af598, #01b3e3, #25ce7b, #fdc741, dodgerblue);
+  background-attachment: fixed;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(to left, #009efd, #01b3e3, #25ce7b, #fdc741, dodgerblue);
+  background-attachment: fixed;
 }
 
 .container {
@@ -122,7 +162,6 @@ header .nav .logo-dash {
   color: #f2f2f2;
   font-size: 12px;
   letter-spacing: 1px;
-  width: 100%;
 }
 
 .main-container .main-paragraph-container p {
@@ -313,7 +352,9 @@ header .nav .logo-dash {
 }
 
 .about-container .about-inner-container .about-header-tag .about-intro {
+  color: #c2e9fb;
   font-size: 0.9rem;
+  font-weight: 900;
 }
 
 .about-container .about-inner-container .about-header-tag .about-intro .about-intro-span {
@@ -560,11 +601,11 @@ header .nav .logo-dash {
   .main-paragraph-container {
     position: absolute;
     left: 350px;
-    bottom: 90px;
+    bottom: 80px;
+    width: 450px;
     text-align: start;
   }
   .main-paragraph-container p {
-    width: 400px;
     text-overflow: ellipsis;
     text-align: start;
     font-size: 11px;
@@ -735,7 +776,7 @@ header .nav .logo-dash {
   }
   .about-container .about-inner-container .about-header-tag .about-intro {
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 900;
   }
   .about-container .about-inner-container .about-header-tag .about-intro .about-intro-span {
     padding-left: 4.8rem;
@@ -891,6 +932,9 @@ header .nav .logo-dash {
   .contact-container .contact-info .email .email-header img {
     height: 20px;
     width: 20px;
+  }
+  .ball {
+    display: block;
   }
 }
 /*# sourceMappingURL=index.css.map */

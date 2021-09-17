@@ -11,10 +11,58 @@ body {
   background-color: #17181c;
   color: #ffffff;
   //   overflow-x: hidden;
+  position: relative;
+}
+.ball {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  border: 3px solid dodgerblue;
+  border-radius: 50%;
+}
+progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border: none;
+  background: transparent;
+}
+progress::-webkit-progress-bar {
+  background: transparent;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(
+    to left,
+    #2af598,
+    #01b3e3,
+    #25ce7b,
+    #fdc741,
+    dodgerblue
+  );
+  background-attachment: fixed;
+}
+progress::-moz-progress-bar {
+  background: linear-gradient(
+    to left,
+    #009efd,
+    #01b3e3,
+    #25ce7b,
+    #fdc741,
+    dodgerblue
+  );
+  background-attachment: fixed;
 }
 
 .container {
   width: 95%;
+
   margin: auto;
   overflow: hidden;
 }
@@ -101,15 +149,14 @@ header {
     color: rgb(242, 242, 242);
     font-size: 12px;
     letter-spacing: 1px;
-    width: 100%;
-    p{
-        width: 80%;
-        padding: 3px;
+    p {
+      width: 80%;
+      padding: 3px;
     }
   }
 }
 .featured-project-container {
-    margin-top: 2rem;
+  margin-top: 2rem;
   .featured-inner-container {
     .featured-main-tag {
       position: relative;
@@ -158,10 +205,10 @@ header {
         flex-direction: column;
         justify-content: space-between;
         h1 {
-            font-weight: 800;
-            padding-top: 1.5rem;
-            font-size: 2rem;
-          }
+          font-weight: 800;
+          padding-top: 1.5rem;
+          font-size: 2rem;
+        }
 
         span {
           font-size: 0.6rem;
@@ -172,7 +219,7 @@ header {
           background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
           display: flex;
           flex-direction: column;
-          justify-content: space-between
+          justify-content: space-between;
         }
         &:first-child {
           height: 220px;
@@ -181,7 +228,6 @@ header {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
         }
 
         &:nth-child(2) {
@@ -228,7 +274,9 @@ header {
         font-size: 1.4rem;
       }
       .about-intro {
+          color: #c2e9fb ;
         font-size: 0.9rem;
+        font-weight: 900;
         .about-intro-span {
           padding-left: 4.8rem;
         }
@@ -421,10 +469,10 @@ header {
   .main-paragraph-container {
     position: absolute;
     left: 350px;
-    bottom: 90px;
+    bottom: 80px;
+    width: 450px;
     text-align: start;
     p {
-      width: 400px;
       text-overflow: ellipsis;
       text-align: start;
       font-size: 11px;
@@ -581,7 +629,7 @@ header {
         }
         .about-intro {
           font-size: 1.8rem;
-          font-weight: 400;
+          font-weight: 900;
 
           .about-intro-span {
             padding-left: 4.8rem;
@@ -714,5 +762,8 @@ header {
         }
       }
     }
+  }
+  .ball {
+    display: block;
   }
 }

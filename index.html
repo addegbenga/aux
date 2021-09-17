@@ -22,24 +22,26 @@
             <h1 class="logo">ADE<span class="logo-dash">_</span></h1>
             <i class="fa fa-bars bars"></i>
           </div>
+          <progress max="100" value="0"></progress>
         </header>
 
         <div class="container">
+          <div class="ball"></div>
           <!-- body section -->
           <div class="main-container">
-            <div class="box-1"></div>
-            <div class="main-content-container">
+            <div class="box-1 bxs"></div>
+            <div class="main-content-container gs_reveal">
               <h1 class="main-header-tag">
                 Creative Dev <br />
                 world class
               </h1>
               <h1 class="main-sub-header-tag">ordinary “ world.</h1>
             </div>
-            <div class="box-2"></div>
-            <div class="box-3"></div>
-            <div class="box-4"></div>
-            <div class="main-paragraph-container">
-              <p>
+            <div class="box-2 bx"></div>
+            <div class="box-3 bx"></div>
+            <div class="box-4 bx"></div>
+            <div class="main-paragraph-container gs_reveal">
+              <p id="text">
                 "[master b42c5b5] changes 4 files changed, 62 insertions(+), 117
                 deletions(-) rewrite index.css.map (81%) [master (root-commit)
                 8446585] mobile 11 files changed, 1049 insertions(+) ☑️☑️“
@@ -59,19 +61,19 @@
               <h1>Top-notch project i have worked on</h1>
 
               <div class="project-list-container">
-                <div class="project">
+                <div class="project skewElem">
                   <h1>RABA EXCHANGE API</h1>
                   <span>React/Nodejs</span>
                 </div>
-                <div class="project">
+                <div class="project skewElem">
                   <h1>IGNITOR MODE SCRAPPER</h1>
                   <span>HTML/CSS/JS</span>
                 </div>
-                <div class="project">
+                <div class="project skewElem">
                   <h1>DROP BOX TRACKER</h1>
                   <span>React/Node/Socket</span>
                 </div>
-                <div class="project hide">
+                <div class="project skewElem">
                   <h1>WEB SCRAPER</h1>
                   <span>React/Node/Socket</span>
                 </div>
@@ -90,12 +92,12 @@
 
           <!-- about section -->
           <div class="about-container">
-            <div class="about-header">
+            <div class="about-header gs_reveal">
               <h2>About me</h2>
               <img src="./img/information.png" alt="about-me" />
             </div>
             <div class="about-inner-container">
-              <div class="about-header-tag">
+              <div class="about-header-tag gs_reveal">
                 <h1 class="about-greeting">Hi!</h1>
                 <h1 class="about-intro">
                   I”m Adeyemi Gbenga,<br />
@@ -104,7 +106,7 @@
                 </h1>
               </div>
               <div class="about-details-container">
-                <p>
+                <p class="gs_reveal gs_reveal_fromLeft">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Molestiae maiores labore dolorum, explicabo id officia tempora
                   tenetur veniam voluptas dolorem quas aperiam ab iusto quidem
@@ -113,14 +115,14 @@
                   possimus, officia iure amet minus, non alias deleniti
                   doloribus tempora?
                 </p>
-                <img src="./img/Rectangle 17.png" alt="about-me-img" />
+                <img class=" gs_reveal gs_reveal_fromRight" src="./img/Rectangle 17.png" alt="about-me-img" />
               </div>
             </div>
           </div>
           <!-- about section -->
           <!-- online presence section -->
-          <div class="profile-container">
-            <div class="profile-header">
+          <div class="profile-container gs_reveal">
+            <div class="profile-header ">
               <h2>Blue Prints</h2>
               <img src="./img/tap.png" alt="tap" />
             </div>
@@ -137,16 +139,16 @@
 
           <!-- contact me section -->
           <div class="contact-container">
-            <div class="contact-header">
+            <div class="contact-header gs_reveal">
               <h2>CONTACT ME</h2>
               <img src="./img/in-love.png" alt="contact-happy" />
             </div>
 
-            <h1>
+            <h1 class="gs_reveal">
               Oh yes! you love what you see right <br />
               Lets connect
             </h1>
-            <div class="contact-info">
+            <div class="contact-info gs_reveal">
               <div class="email">
                 <div class="email-header">
                   <h2>EMAIL</h2>
@@ -154,7 +156,7 @@
                 <h1>addegbenga@gmail.com</h1>
               </div>
 
-              <div class="phone">
+              <div class="phone gs_reveal">
                 <div class="phone-header">
                   <h2>PHONE NO</h2>
                   <img src="./img/nigeria.png" alt="nigeria" />
@@ -169,5 +171,29 @@
       </div>
     </main>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
+    integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"
+    integrity="sha512-SuKlyVGK9c7adN5I0qO0zZt1KAXK9WpUguwgH16A3s8Wvrc1X3mum4PS9bI7223Y2v5KBzx3qTCdlVymgF0uWg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"
+    integrity="sha512-yVNhaX0I/lk5GtKya9lE27DopFWV791zsCnMpztLnGJgWESdN825wbH0/I1HfwdNgAKFsq9pXv5vpXjTAU7h3A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script src="./main.js"></script>
 </html>
